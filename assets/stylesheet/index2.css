@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+
+.sky{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: earth 10s linear alternate infinite;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+@keyframes earth{
+
+    0%
+    {
+        transform: scale(1);
+        
+    }
+    50%
+    {
+        transform: scale(1.1);
+
+    }
+    100%
+    {
+        transform: scale(1.17);
+
+    }
+}
+
+span{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgb(255,255,255,0.1),
+    0 0 0 8px rgb(255,255,255,0.1),
+    0 0 0 2px rgba(255, 255, 255, 0.671);
+    animation: star 3s linear infinite;
+   
+}
+@keyframes star{
+    0%
+    {
+        transform:rotate(315deg) translateX(0);
+        opacity: 1;
+
+    }
+    95%{
+        opacity: 0;
+
+    }
+    100%
+    {
+        transform:rotate(315deg) translateX(-1000px);
+        opacity: 0;
+        
+
+    }
+}
+
+span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+    /* transform: translateY(-50%); */
+}
+
+span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+}
+
+
+span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+span:nth-child(3){
+    top: 80px;
+    right: 0;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+span:nth-child(7){
+    top: 0;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 2s;
+}
+
+span:nth-child(8){
+    top: 0;
+    right: 800px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.8s;
+}
+
+span:nth-child(9){
+    top: 0px;
+    right: 900px;
+    left: initial;
+    animation-delay: 1.6s;
+    animation-duration: 1s;
+}
+
+span:nth-child(10){
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 1.8s;
+    animation-duration: 2.5s;
+}
+
+

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(59, 62, 62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+section>div{
+    width: 250px;
+    height: 70px;
+    background-color: rgb(109, 99, 117);
+    transform: skewY(-15deg);
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    
+}
+
+section>div::before{
+    content: '';
+    width: 70px;
+    height: 100%;
+    background-color: rgb(23, 21, 21);
+    position: absolute;
+    left:-70px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.7s;
+    
+    
+    
+}
+
+
+section>div::after{
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: rgb(71, 66, 58);
+    position: absolute;
+    left: 0;
+    top: -70px;
+    transform-origin: bottom;
+    transform:skewX(45deg);
+    transition: 0.7s;
+
+
+}
+
+
+section>div:nth-child(1):hover{
+    transform: translateX(-100px) skewY(-15deg) translateY(28px) ;
+    background-color:  #229ED9;
+
+}
+section>div:nth-child(1):hover::after{
+    background-color:  #229fd9b0;
+    
+}
+section>div:nth-child(1):hover::before{
+    background-color:  #23a5e2;
+    
+}
+
+section>div:nth-child(3):hover{
+    transform: translateX(-100px) skewY(-15deg) translateY(28px);
+    background-color:   #53fe73;
+}
+section>div:nth-child(3):hover::after{
+    background-color:   #5ffc7cc3;
+    
+}
+section>div:nth-child(3):hover::before{
+    background-color:   #5FFC7B;
+    
+}
+section>div:nth-child(2):hover{
+    transform: translateX(-100px) skewY(-15deg) translateY(28px);
+    background-color:  #fc0808;
+}
+section>div:nth-child(2):hover::after{
+    background-color:  #ff0000b0;
+    
+}
+section>div:nth-child(2):hover::before{
+    background-color:  #FF0000;
+    
+}
+section>div:nth-child(4):hover{
+    transform: translateX(-100px) skewY(-15deg) translateY(28px);
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+section>div:nth-child(4):hover::after{
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    
+}
+section>div:nth-child(4):hover::before{
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    
+}
+section>div:nth-child(5):hover{
+    transform: translateX(-100px) skewY(-15deg) translateY(28px);
+    background-color: #1DA1F2;
+}
+section>div:nth-child(5):hover::after{
+    background-color: #1da0f2d5;
+    
+}
+section>div:nth-child(5):hover::before{
+    background-color: #1DA1F2;
+    
+}
+
+
+section>div:nth-child(1){
+    z-index: 10;
+}
+section>div:nth-child(2){
+    z-index: 9;
+}
+section>div:nth-child(3){
+    z-index: 8;
+}
+section>div:nth-child(4){
+    z-index: 7;
+}
+section>div:nth-child(5){
+    z-index: 6;
+}
+
+
+section>div>i{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    left: -15%;
+    transform: skewY(45deg) translateX(-20px); 
+    opacity: 0; 
+    transition: 0.7s;
+}
+section>div:hover>i{
+    color: white;
+    opacity: 1;
+}
+
+
+
+
+
+
